@@ -416,7 +416,7 @@
 		background-color: var(--color-white);
 		width: 0;
 		height: 0.2rem;
-		transition: var(–transition-duration) var(transition-cubic-bezier);
+		transition: var(–-transition-duration) var(--transition-cubic-bezier);
 	}
 
 	.nav .nav-item:hover .nav-link::before {
@@ -512,7 +512,7 @@
 		color: var(--button-hover-color);
 		text-decoration: var(--button-hover-text-decoration);
 		background: var(--button-hover-background);
-		transition-duration: var(-transition-duration);
+		transition-duration: var(--transition-duration);
 		transition-property: color, background-color;
 
 	}
@@ -581,10 +581,6 @@
 		vertical-align: bottom;
 	}
 
-.card-work:hover .card-image {
-	transition: var(–transition-duration) var(transition-cubic-bezier);
-}
-
 	.card-work .card-inner {
 		position: absolute;
 		top: -0.1rem;
@@ -592,7 +588,7 @@
 		right: -0.1rem;
 		bottom: 0.1rem;
 		z-index: 1;
-		transition: var(–transition-duration) var(transition-cubic-bezier);
+		transition: var(–-transition-duration) var(--transition-cubic-bezier);
 	}
 
 	.card-work:hover .card-inner {
@@ -642,8 +638,10 @@
 		opacity: 1;
 	}
 
-	.card-work .card-image {
+	.card-work:hover .card-image {
 		transform: scale(1.2);
+		transition: var(–transition-duration) var(transition-cubic-bezier);
+		
 	}
 
 	.card-work:hover .card-outer {
